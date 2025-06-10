@@ -52,14 +52,12 @@ fn array_sum(tree: [u32; 3]) -> u32 {
     tree[0] + tree[1] + tree[2]
 }
 
-
 fn main() {
     let res1 = double_int32(12);
     println!("double_int32: {}", res1);
 
     let res2 = double_int64(1204333);
     println!("double_int64: {}", res2);
-
 
     let res3 = double_float32(1204333.256);
     println!("double_float32: {}", res3);
