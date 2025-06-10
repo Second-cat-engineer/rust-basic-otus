@@ -29,9 +29,10 @@ mod fizzbuzz_list_tests {
     #[test]
     fn test_fizzbuzz_list_up_to_5() {
         let result = fizzbuzz_list(5);
-        let expected = vec![
-            "1", "2", "Fizz", "4", "Buzz"
-        ].into_iter().map(String::from).collect::<Vec<String>>();
+        let expected = vec!["1", "2", "Fizz", "4", "Buzz"]
+            .into_iter()
+            .map(String::from)
+            .collect::<Vec<String>>();
         assert_eq!(result, expected);
     }
 }
@@ -64,7 +65,6 @@ mod tests {
         assert_eq!(&fizzbuzz(49), "49");
     }
 }
-
 
 fn main() {
     let result = fizzbuzz_list(15);
